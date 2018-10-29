@@ -1,0 +1,50 @@
+::-moz-selection, ::selection,
+::-moz-selection,.title-tip {
+    background: #8e54e9;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.shrink .navbar-nav .nav-link:hover,.faqs .nav-tabs .nav-link,.faqs .card-header a {
+    color: #8e54e9;
+}
+
+.cryptorio-btn li a,.dropdown-item:focus,
+.dropdown-item:hover,.service-item-icon,.timeline:before,.timeline-item.active,.timeline-item.timeline-right:before,
+.timeline-item.timeline-left:before,.app-mockup form input[type=submit],#backtotop i:hover,footer .mailchimp button,footer .contact-info li i,footer .footer-social ul li a {
+    background: -webkit-linear-gradient(to right, #4776e6, #8e54e9);
+    background: -webkit-gradient(linear, left top, right top, from(#4776e6), to(#8e54e9));
+    background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
+    background: -o-linear-gradient(left, #4776e6, #8e54e9);
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+}
+.ico-countdown,.ico-countdown .cdown,.ico-event-item,.timeline-item,.faqs .nav-tabs,.faqs .card,
+footer .mailchimp input {
+    border-color: #4776e6!important;
+}
+.team-member,.faqs,.faqs .card-header,.faqs .card-body {
+    background: #0e066b;
+}
+
+footer {
+    background: #0a1556;
+}
+
+.shrink {
+    -webkit-box-shadow: 0 0 20px #8e54e9;
+            box-shadow: 0 0 20px #8e54e9;
+}
+
+.coin-item-stats {
+    -webkit-box-shadow: inset 0 0 10px #4776e6;
+            box-shadow: inset 0 0 10px #4776e6;
+}
+
+.animated-circle .circle {
+    -webkit-box-shadow: 0 0 40px #8e54e9, inset 0 0 40px #4776e6;
+            box-shadow: 0 0 40px #8e54e9, inset 0 0 40px #4776e6;
+}
+.ico-countdown .cdown strong {
+    background: -webkit-linear-gradient( #4776e6, #8e54e9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

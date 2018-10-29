@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="cryptorio">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>ThoChain</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" id="triggerColor" href="assets/css/colors/default.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" data-ng-controller="appCtrl">
+    <!-- navbar -->
+    <nav class="navbar navbar-toggleable-md fixed-top">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo" height="50px"></a><span>ThoChain</span>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#2"><span class="sr-only">(current)</span>About ico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#5">How To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#6">Token Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#8">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll href="#9">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <section id="1" class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-lg-6">
+                    <div class="banner-text">
+                        <h1>Cryptocurrency World</h1>
+                        <h2>Decentralize network.</h2>
+                        <p>ThoChain is an innovative solution to scalability problem with the Ethereum blockchain, and other blockchain platforms.</p>
+                        <ul class="cryptorio-btn list-inline">
+                            <li class="list-inline-item"><a href="#">Whitepaper</a></li>
+                            <li class="list-inline-item"><a href="#">Join Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-6">
+                    <div class="animated-circle">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- statistic -->
+    <section id="2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-3">
+                    <div class="coin-item-stats">
+                        <h5>{{coinPrice[0].symbol}}/USD</h5>
+                        <span>${{coinPrice[0].price_usd}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="coin-item-stats">
+                        <h5>{{coinPrice[2].symbol}}/USD</h5>
+                        <span>${{coinPrice[2].price_usd}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="coin-item-stats">
+                        <h5>{{coinPrice[3].symbol}}/USD</h5>
+                        <span>${{coinPrice[3].price_usd}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="coin-item-stats">
+                        <h5>{{coinPrice[4].symbol}}/USD</h5>
+                        <span>${{coinPrice[4].price_usd}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="coin-item-stats">
+                        <h5>{{coinPrice[5].symbol}}/USD</h5>
+                        <span>${{coinPrice[5].price_usd}}</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="coin-item-stats">
+                        <h5>{{coinPrice[6].symbol}}/USD</h5>
+                        <span>${{coinPrice[6].price_usd}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Service -->
+    <section id="4">
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Our Services</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 70px"></div>
+        <div class="service">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-chain"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Relational Blockchain</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-bitcoin"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Fraud Reduction</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-paypal"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Next Generation Wallet</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-recycle"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Recovery Nodes</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-percent"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Very Low Fees</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-money"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Crypto Payment</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="service-item text-center">
+                            <div class="service-item-icon">
+                                <i class="fa fa-fw fa-4x fa-signal"></i>
+                            </div>
+                            <div class="service-item-content">
+                                <h4>Decentralize Network</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 35px"></div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="how-it-works">
+                        <div class="how-it-works-obj">
+                            <img src="assets/images/investors.png" alt="coin">
+                            <p>Investors</p>
+                        </div>
+                        <div class="how-it-works-obj">
+                            <img src="assets/images/payments.png" alt="coin">
+                            <p>Investment</p>
+                        </div>
+                        <div class="how-it-works-obj">
+                            <img src="assets/images/developers.png" alt="coin">
+                            <p>Project</p>
+                        </div>
+                        <div class="how-it-works-obj">
+                            <img src="assets/images/savings.png" alt="coin">
+                            <p>Return</p>
+                        </div>
+
+                        <div class="shape-style-two">
+                            <div class="shape-style-two-obj">
+                                <img src="assets/images/btc.png" alt="coin">
+                            </div>
+                            <div class="shape-style-two-obj">
+                                <img src="assets/images/eth.png" alt="coin">
+                            </div>
+                            <div class="shape-style-two-obj">
+                                <img src="assets/images/ripple.png" alt="coin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <span class="title-tip">How ThoChain Work</span>
+                    <div class="empty-space" style="height: 20px"></div>
+                    <div class="heading">
+                        <h1></h1>
+                    </div>
+                    <div class="empty-space" style="height: 20px"></div>
+                    <p>ThoChain features a 100-Masternodes architecture with Proof of Stake Voting (POSV) consensus for near-zero fee, and instant transaction confirmation. Security, stability and chain finality are guaranteed via novel techniques such as double validation, staking via smart-contracts and uniform randomization processes.</p>
+                    <p>Scaling techniques such as sharding, EVM parallelisation, private-chain generation, hardware integration will be continuously researched and integrated into ThoChain which will become an ideal scalable smart-contract public blockchain for decentralized apps, token issuance and token integration for small and big businesses.</p>
+                    <div class="empty-space" style="height: 20px"></div>
+                    <ul class="cryptorio-btn list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-book"></i>Know More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 80px"></div>
+    </section>
+
+    <!-- What is ICO -->
+    <section id="3">
+        <div class="empty-space" style="height: 70px"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-lg-6">
+                    <span class="title-tip">Details of ICO</span>
+                    <div class="empty-space" style="height: 20px"></div>
+                    <div class="heading">
+                        <h1>What is ICO ?</h1>
+                    </div>
+                    <div class="empty-space" style="height: 20px"></div>
+                    <p>ICO is the abbreviation of Initial Coin Offering. It means that someone offers investors some units of a new cryptocurrency or crypto-token in exchange against cryptocurrencies like Bitcoin or Ethereum.</p>
+                    <p>Since 2013 ICOs are often used to fund the development of new cryptocurrencies. The pre-created token can be easily sold and traded on all cryptocurrency exchanges if there is demand for them.</p>
+
+                    <div class="empty-space" style="height: 20px"></div>
+                    <ul class="cryptorio-btn list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-book"></i>Know More</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-lg-5 offset-lg-1">
+                    <div class="shape-style-one">
+                        <div class="shape-style-one-obj">
+                            <img src="assets/images/ripple.png" alt="coin">
+                        </div>
+                        <div class="shape-style-one-obj">
+                            <img src="assets/images/eth.png" alt="coin">
+                        </div>
+                        <div class="shape-style-one-obj">
+                            <img src="assets/images/btc.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 80px"></div>
+    </section>
+
+    <!-- Token Sale -->
+    <section id="6">
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Token Sale</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 70px"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="ico-countdown">
+                        <h4>ICO Start In</h4>
+                        <div class="row" data-countdown="2018/12/01"></div>
+                        <ul class="cryptorio-btn list-inline">
+                            <li class="list-inline-item"><a href="#">Join & Buy token</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="ico-event-item">
+                                <h6>Start</h6>
+                                <p>Dec 01, 2018 (9:00 AM GMT+7)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="ico-event-item">
+                                <h6>Number of tokens for sale</h6>
+                                <p>650,000,000 ABC (65%)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="ico-event-item">
+                                <h6>End</h6>
+                                <p>Dec 31, 2018 (23:59 PM GMT+7)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="ico-event-item">
+                                <h6>Tokens exchange rate</h6>
+                                <p>1 ETH = 20,000 ABC</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="ico-event-item">
+                                <h6>Acceptable currencies</h6>
+                                <p>ETH</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="ico-event-item">
+                                <h6>Minimal transaction amount</h6>
+                                <p>0.1 ETH</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 75px"></div>
+    </section>
+
+    <!-- App -->
+    <section id="7">
+        <div class="heading">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="iphonex-mockup">
+                            <div class="iphonex-sensor"></div>
+                            <iframe src="iphonex-mockup.html" width="310" height="640"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <div class="empty-space" style="height: 50px"></div>
+                        <h1>ThoChain App</h1>
+                        <div class="empty-space" style="height: 20px"></div>
+                        <p>ThoChain App is a dApp developed using ERC-20 technology on the Ethereum platform. Smart-contracts for multi advertising models like CPC, CPM, CPA, CPI, etc. are deployed in ThoChain App to deliver the transparency and secure the payments between parties like advertisers, publishers, ad platforms. By integrating with ThoChain technology, ThoChain App will have near-zero transaction fee, much higher transaction capacity and faster confirmation time compared to those on Ethereum.</p>
+                        <p></p>
+                        <ul class="ulli">
+                            <li>Low fee</li>
+                            <li>EVM compatible</li>
+                            <li>Community support</li>
+                            <li>Fast confirmation time</li>
+                            <li>Fundraising opportunities</li>
+                        </ul>
+                        <div class="empty-space" style="height: 30px"></div>
+                        <ul class="cryptorio-btn list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-lg fa-apple"></i>Apple Store</a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-lg fa-android"></i>Playstore</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-space" style="height: 85px"></div>
+    </section>
+
+    <!-- Road Map -->
+    <section id="8">
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Roadmap</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 70px"></div>
+        <div class="container timeline">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="timeline-item active">
+                        <h6>October 2018</h6>
+                        <p>
+                            <ul class="ulli">
+                                <li>ThoChain design</li>
+                                <li>ThoChain's testnet 1.0</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="timeline-item">
+                        <h6>December 2018</h6>
+                        <p>
+                            <ul class="ulli">
+                                <li>Block explorer beta</li>
+                                <li>ThoChain ICO</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="timeline-item">
+                        <h6>March 2019</h6>
+                        <p>
+                            <ul class="ulli">
+                                <li>Mainnet launch</li>
+                                <li>Block explorer release</li>
+                                <li>ThoChain App Alpha</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="timeline-item">
+                        <h6>May 2019</h6>
+                        <p>
+                            <ul class="ulli">
+                                <li>ThoChain App Beta</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="timeline-item">
+                        <h6>July 2019</h6>
+                        <p>
+                            <ul class="ulli">
+                                <li>ThoChain App Release</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="timeline-item">
+                        <h6>December 2019</h6>
+                        <p>
+                            <ul class="ulli">
+                                <li>Exchange Listing</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-space" style="height: 90px"></div>
+    </section>
+
+    <!-- Team -->
+    <section id="9">
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Team</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 70px"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4">
+                    <div class="team-member">
+                        <img src="assets/images/team/1.png" alt="member">
+                        <h3>Tony Nguyen</h3>
+                        <span>Founder/CEO/CTO/Developer</span>
+                        <div class="team-member-desc">
+                            <p>An experienced and accomplished developer; good knowledge in Blockchain, programing languages and Linux servers.</p>
+                        </div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/thosuperman" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart -->
+    <section id="10">
+        <div class="container">
+            <div class="row justify-content-center cryptorio-chart">
+                <div class="col-lg-6">
+                    <h3>Distribution of tokens</h3>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Use of proceeds</h3>
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 90px"></div>
+    </section>
+    
+    <!-- Partner -->
+    <div class="container">
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1>Partners</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-space" style="height: 70px"></div>
+        <div class="row text-center justify-content-center">
+            <div class="col-sm-2 align-self-center">
+                <div class="partner-company">
+                    <img class="img-fluid" src="assets/images/company/PasonaTech.png" alt="Pasona Tech Vietnam">
+                </div>
+            </div>
+            <div class="col-sm-2 align-self-center">
+                <div class="partner-company">
+                    <img class="img-fluid" src="assets/images/company/evolable-asia-logo.png" alt="Evolable Asia">
+                </div>
+            </div>
+            <div class="col-sm-2 align-self-center">
+                <div class="partner-company">
+                    <img class="img-fluid" src="assets/images/company/icd-vietnam-logo.png" alt="ICD Vietnam">
+                </div>
+            </div>
+            <div class="col-sm-2 align-self-center">
+                <div class="partner-company">
+                    <img class="img-fluid" src="assets/images/company/logo_defide.png" alt="defide">
+                </div>
+            </div>
+            <div class="col-sm-2 align-self-center">
+                <div class="partner-company">
+                    <img class="img-fluid" src="assets/images/company/nec-vietnam-logo.png" alt="nec vietnam">
+                </div>
+            </div>
+            <div class="col-sm-2 align-self-center">
+                <div class="partner-company">
+                    <img class="img-fluid" src="assets/images/company/tas-logo.png" alt="Talent Asia Solutions">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="empty-space" style="height: 50px"></div>
+
+    <!-- Footer -->
+    <footer class="background-color-two">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <ul class="list-inline contact-info">
+                        <li class="list-inline-item"><i class="fa fa-lg fa-fw fa-phone"></i>(+84) 909763351</li>
+                        <li class="list-inline-item"><i class="fa fa-lg fa-fw fa-envelope"></i>hello@thochain.com</li>
+                        <li class="list-inline-item"><i class="fa fa-lg fa-fw fa-paper-plane"></i>Join us on Telegram</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-md-7">
+                    <form class="mailchimp ng-pristine ng-valid">
+                        <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+                        <input type="email" name="EMAIL" id="subscriber-email" placeholder="Enter your Email" class="form-control">
+                        <button type="submit">Subscribe</button>
+                        <span class="subscription-success"> </span>
+                        <span class="subscription-error"> </span>
+                        <label class="subscription-label" for="subscriber-email"></label>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <div class="footer-social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/thochain" target="_blank"><i class="fa fa-lg fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 text-center">
+                    <div class="footer-copyright">
+                        <p>Copyright © 2018 | All rights reserved by <a href="https://thochain.com">ThoChain</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!--======= Back to Top =======-->
+
+    <div id="backtotop"><i class="fa fa-lg fa-arrow-up"></i></div>
+
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+/*shape-style-one*/
+.shape-style-one {
+    margin-top: 135px;
+}
+
+.shape-style-one-obj {
+    width: 270px;
+    height: 230px;
+    margin: 10px;
+}
+
+.shape-style-one-obj img {
+    top: 40%;
+    left: 40%;
+}
+
+/*animated-circle */
+
+.animated-circle {
+    width: 400px;
+    height: 400px;
+    top: -35%;
+    left: -30%;
+}
+
+.animated-circle .circle {
+    width: 400px;
+    height: 400px;
+}
+
+.animated-circle .circle::before {
+    -webkit-transform: translateZ(-170px);
+    transform: translateZ(-170px);
+}
+
+.animated-circle .circle::after {
+    -webkit-transform: translateZ(170px);
+    transform: translateZ(170px);
+}
