@@ -128,10 +128,10 @@
         var myChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ["ICO Token Sales", "Research & Development", "Bounty Program"],
+                labels: ["Token AirDrop", "Research & Development", "Bounty Program"],
                 datasets: [{
                     label: '# of Votes',
-                    data: [65, 20, 15],
+                    data: [40, 40, 20],
                     backgroundColor: [
                         '#417AFF',
                         '#DE4A30',
